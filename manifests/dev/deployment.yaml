@@ -1,15 +1,15 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: assadldn-app
-  namespace: assadldn
+  name: emiliabastien-app
+  namespace: emiliabastien
   labels:
-    app: assadldn-app
-    env: assadldn
+    app: emiliabastien-app
+    env: emiliabastien
 spec:
   selector:
     matchLabels:
-      app: assadldn-app
+      app: emiliabastien-app
   strategy:
     type: RollingUpdate
     rollingUpdate:
@@ -19,10 +19,10 @@ spec:
   template:
     metadata:
       labels:
-        app: assadldn-app
+        app: emiliabastien-app
     spec:
       containers:
-      - name: assadldn-app
+      - name: emiliabastien-app
         image: {{ IMAGE_CONTAINER }}
         #image: docker.io/aquasaemea/saemea-app:latest
         imagePullPolicy: Always
