@@ -7,7 +7,7 @@ on:
     branches: 
       - main
       ## comment test
-      #testing1
+      #test2
       
 env:
    DOCKER_REPOSITORY: emiliabastien # name of Docker Hub ID
